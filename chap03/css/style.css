@@ -80,6 +80,27 @@ img {
         padding: 80px 20px 0 20px;
     }
 }
+.post-header {
+    margin-bottom: 60px;
+}
+.post-contents {
+    margin: 0 0 60px 0;
+}
+@media (min-width: 768px) {
+    .post-contents {
+        max-width: 600px;
+        margin: 0 auto 60px auto;
+    }
+}
+.post-footer {
+    margin: 0 0 60px 0;
+}
+@media (min-width: 768px) {
+    .post-footer {
+        max-width: 600px;
+        margin: 0 auto 60px auto;
+    }
+}
 
 /**
  * ヘッダコンテナ
