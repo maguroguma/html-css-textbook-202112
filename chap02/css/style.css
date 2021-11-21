@@ -35,12 +35,12 @@ img {
  * ページ下部
  * */
 .bottom-container {
-    padding: 0 4% 0 4%;
+    padding: 60px 4% 0 4%;
 }
 @media (min-width: 768px) {
     .bottom-container {
         margin: 0 auto;
-        padding: 0 20px 0 20px;
+        padding: 60px 20px 0 20px;
         max-width: 1040px;
     }
 }
@@ -49,13 +49,13 @@ img {
  * フッター
  * */
 .footer-container {
-    padding: 0 4%;
+    padding: 60px 4%;
 }
 @media (min-width: 768px) {
     .footer-container {
         max-width: 1040px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 60px 20px;
     }
 }
 
@@ -63,13 +63,13 @@ img {
  * メインコンテナ
  * */
 .post .main-container {
-    padding: 0 4% 0 4%;
+    padding: 80px 4% 0 4%;
 }
 @media (min-width: 768px) {
     .post .main-container {
         max-width: 1040px;
         margin: 0 auto;
-        padding: 0 20px 0 20px;
+        padding: 80px 20px 0 20px;
     }
 }
 
@@ -97,7 +97,7 @@ img {
     }
     .bc-container {
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 12px 20px;
         max-width: 1040px;
     }
 }
