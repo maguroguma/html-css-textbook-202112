@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/**
+ * ページ全体に関わるCSSの設定
+ * */
+html *,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+/* メディアクエリ: 条件を満たす場合のみ適用されるスタイル */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* スマホよりも少し大きい */
+    }
+}
+body {
+    font-family: sans-serif;
+}
+/* 標準的なリンクのテキスト色 */
+a {
+    color: #f30;
+}
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+    max-width: 100%;
+    height: auto; /* 旧ブラウザ対応 */
+    vertical-align: bottom;
+}
+
+/**
+ * ページ下部
+ * */
+.page-bottom {
+    background: url(../images/bottom-bg.svg);
+}
+.bottom-container {
+    padding: 60px 4% 0 4%;
+}
+@media (min-width: 768px) {
+    .bottom-container {
+        margin: 0 auto;
+        padding: 60px 20px 0 20px;
+        max-width: 1040px;
+    }
+}
+
+/**
+ * フッター
+ * */
+.page-footer {
+    background: #000;
+}
+.footer-container {
+    padding: 60px 4%;
+}
+@media (min-width: 768px) {
+    .footer-container {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+}
+
+/**
+ * メインコンテナ
+ * */
+.post .main-container {
+    padding: 80px 4% 0 4%;
+    background: url(../images/post-bg.svg) repeat-x;
+    background-position: 0 10px;
+}
+@media (min-width: 768px) {
+    .post .main-container {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 80px 20px 0 20px;
+    }
+}
+
+/**
+ * ヘッダコンテナ
+ * */
+.page-header {
+    background: url(../images/header-topline.svg) repeat-x;
+    border-bottom: 1px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+    .header-container {
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1040px;
+    }
+}
+
+/**
+ * パンくずリストコンテナ
+ * */
+.breadcrumb {
+    display: none;
+}
+@media (min-width: 768px) {
+    /* PCだけスタイル適用 */
+    .breadcrumb {
+        display: block;
+        background: #efefef;
+    }
+    .bc-container {
+        margin: 0 auto;
+        padding: 12px 20px;
+        max-width: 1040px;
+    }
+}
