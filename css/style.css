@@ -3,6 +3,20 @@
 /**
  * ページ全体に関わるCSSの設定
  * */
+html *,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+/* メディアクエリ: 条件を満たす場合のみ適用されるスタイル */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* スマホよりも少し大きい */
+    }
+}
 body {
     font-family: sans-serif;
 }
