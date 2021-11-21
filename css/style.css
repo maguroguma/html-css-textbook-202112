@@ -24,3 +24,9 @@ body {
 a {
     color: #f30;
 }
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+    max-width: 100%;
+    height: auto; /* 旧ブラウザ対応 */
+    vertical-align: bottom;
+}
