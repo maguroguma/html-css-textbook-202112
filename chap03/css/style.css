@@ -83,6 +83,11 @@ img {
 .post-header {
     margin-bottom: 60px;
 }
+.post-header h1 {
+    margin: 0 0 20px 0;
+    font-size: 1.875rem;
+    line-height: 1.5; /* 2行以上になったときの行間 */
+}
 .post-contents {
     margin: 0 0 60px 0;
 }
