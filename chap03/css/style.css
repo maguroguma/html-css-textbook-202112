@@ -18,7 +18,12 @@ html {
     }
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+/* 主な太字タグのフォントウェイト設定 */
+h1, h2, h3, h4, h5, h6, th, strong {
+    font-weight: 700;
 }
 /* 標準的なリンクのテキスト色 */
 a {
