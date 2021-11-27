@@ -273,6 +273,42 @@ img {
         max-width: 1040px;
     }
 }
+/* ヘッダロゴとモバイルナビボタン */
+.sitetitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .sitetitle {
+        display: block;
+        padding: 30px 0 0 0;
+    }
+}
+@media (min-width: 768px) {
+    .navbtn {
+        display: none;
+    }
+}
+/* ヘッダロゴ */
+.header-logo {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 0;
+    line-height: 0;
+}
+.header-logo img {
+    width: 130px;
+}
+@media (min-width: 768px) {
+    .header-logo {
+        padding: 0;
+    }
+    .header-logo img {
+        width: 180px;
+    }
+}
+
 /* テキストの先頭にアイコン */
 .post-info {
     margin-bottom: 3px;
