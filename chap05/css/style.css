@@ -173,6 +173,26 @@ img {
         margin: 0 1rem; /* 中央寄せなので左右均等にマージンをふる */
     }
 }
+/* ナビゲーション2 その他リンク */
+.footer-nav2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-nav2 li {
+    margin: 0 .75rem 3px .75rem;
+    font-size: .75rem;
+}
+.footer-nav2 li a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+.footer-nav2 li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 /* コピーライト */
 .copyright {
     font-size: .75rem;
