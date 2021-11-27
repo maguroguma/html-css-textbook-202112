@@ -136,6 +136,19 @@ img {
         padding: 60px 20px;
     }
 }
+.footer-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer-logo img {
+    width: 160px;
+}
+/* コピーライト */
+.copyright {
+    font-size: .75rem;
+    color: #d8d8d8;
+    text-align: center;
+}
 
 /**
  * メインコンテナ
