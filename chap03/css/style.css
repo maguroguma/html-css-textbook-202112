@@ -120,6 +120,26 @@ img {
 .post-contents mark {
     background: linear-gradient(transparent 50%, #ffff7c 50%)
 }
+/* float */
+/* 親要素でflow-rootによりfloat解除 */
+.float-box {
+    display: flow-root;
+    margin: 30px 0;
+}
+.float-left { /* このclassはサンプルでは未使用 */
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 40%;
+}
+.float-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 40%;
+}
+.float-box p {
+    margin: 0;
+}
+
 .photo-caption {
     margin: 30px 0;
 }
