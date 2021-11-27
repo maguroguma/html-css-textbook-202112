@@ -166,6 +166,27 @@ img {
 .float-box p {
     margin: 0;
 }
+/* チャット */
+.chat {
+    margin: 30px 0;
+}
+.chat-1st {
+    display: flex;
+    margin: 15px 0;
+}
+.chat-1st .face {
+    margin: 0 10px 0 0;
+}
+.talk {
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+.chat-1st .talk {
+    background: #b8e5ea;
+}
+.talk p {
+    margin: 0;
+}
 
 .photo-caption {
     margin: 30px 0;
