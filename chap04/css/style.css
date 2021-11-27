@@ -302,6 +302,46 @@ img {
         display: none;
     }
 }
+/* ヘッダナビゲーション */
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-nav.collapse {
+    display: none;
+}
+.header-nav li a {
+    display: block; /* 親要素の高さを突き破ってクリック領域を拡大できる */
+    padding: 20px 30px;
+    border-top: 1px solid #d8d8d8;
+    background: #efefef;
+    color: #000;
+    text-decoration: none;
+}
+.header-nav li a:hover {
+    background: #b8e5ea;
+}
+@media (min-width: 768px) {
+    /* PC向けレイアウト */
+    .header-nav {
+        display: flex !important; /* 必ず適用を優先させる */
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .header-nav li a {
+        padding: 6px 20px 2px 20px;
+        border-top: none;
+        border-bottom: 4px solid transparent;
+        background: none;
+    }
+    .header-nav li a:hover {
+        border-bottom: 4px solid #73cbd6;
+        background: none;
+    }
+}
 /* ヘッダロゴ */
 .header-logo {
     margin: 0;
