@@ -10,6 +10,7 @@ html *,
 }
 html {
     font-size: 14px;
+    scroll-behavior: smooth; /* ページトップボタン押下時にスムーズにスクロールする */
 }
 /* メディアクエリ: 条件を満たす場合のみ適用されるスタイル */
 @media (min-width: 768px) {
@@ -99,6 +100,23 @@ img {
     color: #ffffff;
 }
 .sns div a:hover {
+    opacity: .8;
+}
+/* ページトップへ戻るボタン */
+.gotop {
+    text-align: center;
+}
+.gotop a {
+    display: inline-block; /* 適度な幅のボタンを作るテクニック */
+    padding: 1rem 4rem;
+    background: #000000;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: .6;
+}
+.gotop a:hover {
     opacity: .8;
 }
 
