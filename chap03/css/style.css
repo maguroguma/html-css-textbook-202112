@@ -197,6 +197,18 @@ img {
         max-width: 1040px;
     }
 }
+/* テキストの先頭にアイコン */
+.post-info {
+    font-size: .75rem;
+    text-align: right;
+}
+.post-info span {
+    margin: 0 10px 0 0;
+}
+.post-info i {
+    padding-right: 5px;
+    color: #73cbd6;
+}
 
 /**
  * パンくずリストコンテナ
