@@ -381,7 +381,7 @@ img {
  * パンくずリストコンテナ
  * */
 .breadcrumb {
-    display: none;
+    display: none; /* モバイルで非表示 */
 }
 @media (min-width: 768px) {
     /* PCだけスタイル適用 */
@@ -394,4 +394,31 @@ img {
         padding: 12px 20px;
         max-width: 1040px;
     }
+    .bc-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .bc-nav li {
+        font-size: .75rem;
+        color: #747474;
+    }
+    .bc-nav li::after {
+        padding: 0 5px;
+        font-family: "Font Awesome 5 Free"; /* faはCSSからも使える */
+        font-weight: 900;
+        content: "\f054";
+    }
+    .bc-nav li:last-child::after {
+        content: "";
+    }
+    .bc-nav li a {
+        color: #747474;
+    }
+    .bc-nav li a:hover {
+        opacity: .8;
+    }
 }
+
