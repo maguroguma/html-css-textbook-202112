@@ -52,6 +52,26 @@ img {
         max-width: 1040px;
     }
 }
+.banner {
+    display: flex;
+    flex-direction: column; /* モバイルでは縦に並べる */
+    margin-bottom: 30px;
+}
+.banner div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.banner a:hover {
+    opacity: .8;
+}
+@media (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+    }
+    .banner div {
+        margin: 0 10px;
+    }
+}
 
 /**
  * フッター
