@@ -143,6 +143,36 @@ img {
 .footer-logo img {
     width: 160px;
 }
+/* フッターのナビゲーション1 */
+.footer-nav1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-nav1 li {
+    margin: 0 0 2rem 0;
+    font-size: .875rem;
+}
+.footer-nav1 li a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+.footer-nav1 li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+@media (min-width: 768px) {
+    .footer-nav1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-nav1 li {
+        margin: 0 1rem; /* 中央寄せなので左右均等にマージンをふる */
+    }
+}
 /* コピーライト */
 .copyright {
     font-size: .75rem;
