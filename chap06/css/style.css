@@ -552,3 +552,35 @@ img {
     }
 }
 
+/*
+ * index.html
+ * */
+/* ホーム - ヒーローコンテナ */
+.home .page-main {
+    background: url(../images/home-bg.svg);
+}
+.home .main-container {
+    padding: 60px 4%;
+}
+@media (min-width: 768px) {
+    /* PCの場合の左右のマージンとパディングに注目 */
+    .home .main-container {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+}
+/* ホーム - ニュースコンテナ */
+.news {
+    background: #efefef;
+}
+.news-container {
+    padding: 60px 4%;
+}
+@media (min-width: 768px) {
+    .news-container {
+        max-width: 740px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+}
