@@ -1032,3 +1032,30 @@ select {
     background-size: 12px 12px;
     font-size: 16px;
 }
+/* メッセージ（テキストエリア） */
+textarea {
+    width: 100%;
+    height: 6rem;
+    padding: 10px;
+    border: 1px solid #747474;
+    line-height: 1.5;
+}
+/* チェックボックス */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+/* 送信ボタン */
+.form-button {
+    margin-bottom: 0;
+    text-align: center;
+}
+input[type="submit"] {
+    padding: 20px 30px;
+    background-color: #000;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+}
+input[type="submit"]:hover {
+    opacity: .5;
+}
