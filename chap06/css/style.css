@@ -570,6 +570,21 @@ img {
         padding: 60px 20px;
     }
 }
+.home .main-container h2 {
+    /* display: grid; place-items: centerはテキストの上下左右中央配置の公式！ */
+    display: grid;
+    place-items: center;
+    /* 公式 end */
+    margin: 0 auto 30px auto;
+    width: 130px;
+    height: 130px;
+    background: url(../images/home-titleshape.svg) no-repeat;
+    background-size: 130px 130px;
+    color: #ffffff;
+    font-family: 'Croissant One', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
 .hero-container {
     position: relative; /* 画像を重ねたいモジュールの親要素をrelativeにする */
     text-align: center; /* ※これは独自に追加、幅を大きくしたときにヒーロー画像が中央寄せになるように */
