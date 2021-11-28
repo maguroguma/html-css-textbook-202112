@@ -871,3 +871,42 @@ img {
     font-size: .875rem;
     line-height: 1.5;
 }
+/* 記事一覧のリスト */
+.side-latest {
+    margin-bottom: 60px;
+}
+.side-latest h2 {
+    margin: 0 0 10px 0;
+    font-family: 'Croissant One', cursive;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.side-latest ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.side-latest li {
+    display: grid; /* リスト項目要素をgridにする */
+    grid-template-columns: 80px 1fr;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 1rem;
+}
+.side-latest img {
+    border-radius: 50%;
+}
+.side-latest p {
+    margin: 0;
+    font-size: .75rem;
+    line-height: 1.5;
+}
+.side-latest li a {
+    color: #000;
+    text-decoration: none;
+}
+.side-latest li a:hover {
+    opacity: .5;
+}
