@@ -602,6 +602,23 @@ img {
         transform: translate(-200px, -82px);
     }
 }
+.home-latest {
+    margin: 0 0 60px 0;
+    display: grid; /* 親要素にgridを指定 */
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
+    row-gap: 30px;
+}
+.latest-item {
+    border: 1px solid #d8d8d8;
+}
+@media (min-width: 768px) {
+    .home-latest {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}
 /* ホームページ - モジュール */
 /* キャッチフレーズ */
 .home-lead {
