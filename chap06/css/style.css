@@ -587,7 +587,8 @@ img {
 }
 .hero-container {
     position: relative; /* 画像を重ねたいモジュールの親要素をrelativeにする */
-    text-align: center; /* ※これは独自に追加、幅を大きくしたときにヒーロー画像が中央寄せになるように */
+    /* ※これは独自に追加、幅を大きくしたときにヒーロー画像が中央寄せになるように */
+    text-align: center;
 }
 .hero-logo {
     width: 260px;
@@ -654,6 +655,55 @@ img {
 .latest-text h3 a:hover {
     opacity: .5;
 }
+/* メディアオブジェクト（画像とテキストが横並びになるようなレイアウト） */
+.home-popular {
+    margin: 0 0 60px 0;
+    border-top: 1px solid #d8d8d8;
+}
+.home-popular a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+.home-popular a:hover {
+    opacity: .5;
+}
+.popular-item {
+    display: flex;
+    align-items: center; /* align-itemsはflexボックス特有のプロパティ？ */
+    padding: 5px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.popular-photo {
+    flex: 0 0 30%;
+    margin-right: 15px;
+    position: relative;
+}
+.popular-text {
+    flex: 1 1 auto;
+}
+.popular-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media (min-width: 768px) {
+    .popular-text h3 {
+        font-size: 1.25rem;
+    }
+}
+.popular-text p {
+    margin: 0 0 10px 0;
+    display: none;
+}
+@media (min-width: 768px) {
+    .popular-text p {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
+
 /* ホーム 共通のタグ */
 .home-tag {
     margin-bottom: 1rem;
