@@ -572,6 +572,7 @@ img {
 }
 .hero-container {
     position: relative; /* 画像を重ねたいモジュールの親要素をrelativeにする */
+    text-align: center; /* ※これは独自に追加、幅を大きくしたときにヒーロー画像が中央寄せになるように */
 }
 .hero-logo {
     width: 260px;
@@ -585,6 +586,18 @@ img {
         width: 400px;
         transform: translate(-200px, -82px);
     }
+}
+/* ホームページ - モジュール */
+/* キャッチフレーズ */
+.home-lead {
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+.home-lead p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 2;
 }
 
 /* ホーム - ニュースコンテナ */
