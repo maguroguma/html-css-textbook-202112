@@ -570,6 +570,23 @@ img {
         padding: 60px 20px;
     }
 }
+.hero-container {
+    position: relative; /* 画像を重ねたいモジュールの親要素をrelativeにする */
+}
+.hero-logo {
+    width: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130px, 53px);
+}
+@media (min-width: 768px) {
+    .hero-logo {
+        width: 400px;
+        transform: translate(-200px, -82px);
+    }
+}
+
 /* ホーム - ニュースコンテナ */
 .news {
     background: #efefef;
